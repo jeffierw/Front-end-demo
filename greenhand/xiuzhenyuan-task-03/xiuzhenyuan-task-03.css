@@ -1,0 +1,37 @@
+		*{
+			margin:0;
+			padding:0;
+		}
+		.main{
+			font-family: "Mricosoft YaHei";
+			font-style: inherit;
+			color:white;
+			background-color: #66cccc;
+			height:auto;
+			max-width:720px;
+    		min-width:320px;
+    		margin:0 auto;
+    		overflow: hidden;
+    		min-height:960px;
+    		
+		}
+		.fanhui{
+			padding-top: 3%;
+			padding-left: 3%;
+		}
+		.logo1{
+			padding:5%;
+			text-align: center;
+		}
+		.text{
+			text-align: left;
+			padding:10% 10%;
+		}
+		.foot-left{
+			float: left;
+			padding-left:10%;
+		}
+		.foot-right{
+			float:right;
+			padding-right: 10%;
+		}
