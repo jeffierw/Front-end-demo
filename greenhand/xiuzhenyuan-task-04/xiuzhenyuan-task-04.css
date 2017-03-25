@@ -1,0 +1,110 @@
+				html{
+				    font-size: 62.5%;
+				}
+
+				body{
+				    margin: 0;
+				    font-family: "Mricosoft YaHei";
+				    color:white;
+				}
+				header{
+					top:0;
+					right:0;
+					left:0;
+					position: fixed;
+					background: #5ac0ce;
+					height:7rem;
+					
+				}
+			    .left{
+			    	float:left;
+					text-decoration: none;
+					color:white;
+					font-size: 2rem;
+					padding-top: 3rem;
+					padding-left: 1rem;
+				}
+				h2{
+					display:block;
+					text-align: center;
+					font-size: 2.4rem;
+					padding-top: 1rem;
+				}
+				.right{
+					float:right;
+					font-size: 2rem;
+					text-decoration: none;
+					color:white;
+					padding-top: 3rem;
+					padding-right: 1rem;
+
+				}
+				.content{
+					position: absolute;
+					top: 5.5rem;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: #eff0f4;
+
+				}
+				.login{
+					position:relative;
+					margin:.5rem 0 0 0; 
+				}
+				.login input{
+					position:relative;
+					width: 100%;
+					padding-left: 5rem;
+					font-size: 1.7rem;
+					line-height: 2rem;
+					border:none;
+					outline: medium;
+				}
+				.login-1{
+					background-color: white;
+					margin-top: 1rem;
+					padding-top:1.5rem;
+					padding-bottom: 1rem;
+				}
+				.login-2{
+					margin-top:1rem;
+					background-color: white;
+					padding-top:1.5rem;
+					padding-bottom: 1rem;
+				}
+				.iphone{
+					background: url("../xiuzhenyuan-task-04/登陆_03.png") no-repeat;
+					background-size: 4rem 2.5rem;
+					margin: 0 3rem 0 3rem;
+					padding-bottom: 0.5rem;
+					
+				}
+				.locked{
+					background: url("../xiuzhenyuan-task-04/登陆_06.png") no-repeat;
+					background-size: 4rem 2.5rem;
+					margin: 0 3rem 0 3rem;
+					padding-bottom: 0.5rem;
+				}
+				.login-3{
+					width: 100%;
+					margin-top:1.5rem;
+					padding:1.8rem 0;
+					border: none;
+					background-color: #5ac0ce;
+					font-size: 1.8rem;
+					color: #fff;
+				}
+				.login-3:hover{
+					background-color: #66cccc;
+				}
+				.forget{
+					float:right;
+					font-size: 1.5rem;
+				}
+				.forget a{
+					color: #66cccc;
+				}
+				.forget a:hover{
+					color:red;
+				}
