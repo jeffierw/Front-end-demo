@@ -35,3 +35,7 @@
 			float:right;
 			padding-right: 10%;
 		}
+		.foot span{
+			display:block;
+			text-align: center;
+		}
