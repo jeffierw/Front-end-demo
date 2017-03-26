@@ -6,6 +6,7 @@
 				    margin: 0;
 				    font-family: "Mricosoft YaHei";
 				    color:white;
+				    overflow: hidden;
 				}
 				header{
 					top:0;
@@ -14,10 +15,10 @@
 					position: fixed;
 					background: #5ac0ce;
 					height:7rem;
-					
+					overflow: hidden;
 				}
 			    .left{
-			    	float:left;
+			    	position:absolute;
 					text-decoration: none;
 					color:white;
 					font-size: 2rem;
@@ -31,10 +32,11 @@
 					padding-top: 1rem;
 				}
 				.right{
-					float:right;
+					position:absolute;
 					font-size: 2rem;
 					text-decoration: none;
 					color:white;
+					right:0;
 					padding-top: 3rem;
 					padding-right: 1rem;
 
@@ -64,26 +66,38 @@
 				.login-1{
 					background-color: white;
 					margin-top: 1rem;
-					padding-top:1.5rem;
-					padding-bottom: 1rem;
+					padding-top:2rem;
+					
 				}
 				.login-2{
 					margin-top:1rem;
 					background-color: white;
-					padding-top:1.5rem;
-					padding-bottom: 1rem;
+					padding-top:2rem;
+					
 				}
 				.iphone{
-					background: url("../xiuzhenyuan-task-04/登陆_03.png") no-repeat;
-					background-size: 4rem 2.5rem;
+					display:block;
+					background: url("../xiuzhenyuan-task-04/iphone.png") no-repeat;
+					background-size: 1.8rem 2.3rem;
 					margin: 0 3rem 0 3rem;
 					padding-bottom: 0.5rem;
 					
+					
+				}
+				.shuxian{
+					position: relative;
+					border-right:1px solid #DDD;
+					width:0.2rem;
+					height:2rem;
+					left:7rem;
+					bottom:2.6rem;
 				}
 				.locked{
-					background: url("../xiuzhenyuan-task-04/登陆_06.png") no-repeat;
-					background-size: 4rem 2.5rem;
+					display:block;
+					background: url("../xiuzhenyuan-task-04/locked 2.png") no-repeat;
+					background-size: 1.8rem 2.3rem;
 					margin: 0 3rem 0 3rem;
+
 					padding-bottom: 0.5rem;
 				}
 				.login-3{
