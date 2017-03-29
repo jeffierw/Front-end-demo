@@ -1,12 +1,14 @@
-html{
+		html{
 			font-size: 62.5%;
 			font-family: "Mircosoft YaHei";
 			background-color: white;
+
 		}
 		body{
 			margin:0;
 			padding:0;
 			overflow: hidden;
+			
 		}
 		header{
 			position:fixed;
@@ -14,6 +16,7 @@ html{
 			top:0;
 			right:0;
 			height:3.5rem;
+			margin-bottom: 1rem;
 			background-color: #66cccc;
 		}
 		.jineng{
@@ -34,9 +37,21 @@ html{
 		    color: white;
 		}
 
-		.main{
-			padding:0;
-			margin:0;
+		main{
+		    position: absolute;
+		    top:3.5rem;
+		    bottom: 6rem;
+		    left: 0;
+		    right: 0;
+		    overflow-y: auto;
+		    overflow-x: hidden;
+		    background: #fff;
+		}
+		.content{
+		    height: auto;
+		    width:100%;
+		    margin-top: -1rem;
+		    font-size: 1.2rem;
 		}
 		.main-top-jieshao{
 			background: url("../xiuzhenyuan-task-05/background.png");
@@ -83,13 +98,17 @@ html{
 			margin-left: 2rem;
 			margin-top: -1.4rem;
 		}
+		.hengxian{
+			
+		   margin-top: 1.6rem;
+		    border-top: 1px solid #e1e5e7;
+		}
 		.star{
 			display:flex;
-			
 			padding-top:0.6rem;
 		}
 		.star img{
-			transform:scale(0.4,0.42);
+			transform:scale(0.8,0.39);
 		}
 		.star p{
 			display:block;
@@ -102,65 +121,70 @@ html{
         	height:1.5rem;
         	border-left: 0.1rem solid #ccc;
         	margin-left: 1rem;
-        	margin-top:1rem;
+        	margin-top:1.8rem;
 		}
 		ul,li{
 			display:block;
+			float:left;
 			list-style-type: none;
 			margin-left: -3.4rem;
 			font-family: "黑体";
-			font-size: 1.2rem;
+			font-size: 1.6rem;
 		}
 		.list-2{
 			color: #999999;
         	padding-right: 1.6rem;
-        	
         	border-right: 1px solid #ccc;
         	float: left;
+        	overflow: hidden;
 		}
 		.list-1{
 			display:flex;
 			padding-left: 1.6rem;
-			align-items: center;
+			align-items:  center;
 		}
 		.list-1-1{
 			display:flex;
-			align-items: center;
+			align-items:  center;
 			padding-left:  1.6rem;
 			color: red;
 		}
     	.star,li{
     		width: 100%; 
-            padding-top: 2rem;
+            padding-top: 1rem;
             padding-bottom: 1rem;
-            margin-left: 2rem;
+            margin-left: 1.5rem;
+            line-height: 3rem;
 			border-bottom: 1px solid #e1e5e7;
     	}
-    	.foot{
-    		position:fixed;
-    		bottom: 0;
+    	footer div{
+    		position: fixed;
+			bottom: 0;
+			width: 100%;
 			margin-bottom: 1rem;
 		    display: flex;
 			justify-content: space-around;
-			width: 100%;
-    	}
+		}
+		button{
+		    border: 0;
+	    	background-color: white;
+	    	outline: none;
+		}
+		footer button{
+			width: 46%;
+		}
 		footer p{
 			border: 1px solid #5fc0cd;
-			border-radius: 0.5rem;
+			border-radius: 1rem;
 			padding-top: 1rem;
 			padding-bottom: 1rem;
 			text-align: center;
 		}
-		button{
-	    	border: 0;
-	    	background-color: white;
-	    	width:46%;
-	    	outline:none;
-	    }
-	    .white{
-	    	color: white;
+		p.blue{
+			color: #5fc0cd;
+		}
+		p.white{
+			color: white;
 			background-color:  #5fc0cd;
-	    }
-	    .blue{
-	    	color: #5fc0cd;
-	    }
+		}
+		
