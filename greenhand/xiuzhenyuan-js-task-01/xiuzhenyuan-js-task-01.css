@@ -1,0 +1,24 @@
+body{
+				margin:0;
+			}
+			.big-box{
+				
+				margin:10%;
+			}
+			.box{
+				float:right;
+				margin:3% 3% 0 0;
+				background: #ffa600;
+				padding:30% 0 0 0 ;
+				border-radius: 20px;
+				width:30%;
+			}
+			input{
+				width:100%;
+				border-radius: 10px;
+				text-align: center;
+				background-color: #ffa600;
+				height:50px;
+				border-collapse: inherit;
+				text-decoration: none;
+			}
