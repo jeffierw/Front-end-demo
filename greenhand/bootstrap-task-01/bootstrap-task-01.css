@@ -1,57 +1,57 @@
 
-    	html{
-			font-size: 62.5%;
-			font-family: "Mircosoft YaHei";
-			background-color: white;
-		}
-    	body{
-    		margin-top:4.1rem;
-    	}
-    	nav{
-    		background: orange;
-    	}
-    	.carousel{
-    		height: 45rem;
-    		background-color:#000;
-    		margin-bottom: 4rem;
-    	}
-    	.carousel .item{
-    		height: 45rem;
-    		background-color:#000;
-    	}
-    	.carousel img{
-    		width:100%;
-    	}
-    	@media (max-width: 768px) {
-		    .carousel {
-		        height: 200px;
-		        margin-bottom: 30px;
-		    }
-		    .carousel .item{
-		        height: 200px;
-		    }
-		    .carousel img {
-		        min-height: 200px;
-		    }
-		}
-		.jumbotron{
-			background:white;
-			margin-bottom: 5rem;
-		}
-		.show-image{
-			margin-bottom: 10rem;
-		}
-		footer{
-			background-color:#2c3e50;
-			color:white;
-		}
-		footer p{
-			margin-top: 1.5rem;
-		}
-		footer h4{
-			margin-top: 4rem;
-		}
-		footer a{
-			color:white;
-		}
-    
+	    	html{
+				font-size: 62.5%;
+				font-family: "Mircosoft YaHei";
+				background-color: white;
+			}
+	    	body{
+	    		margin-top:4.1rem;
+	    	}
+	    	nav{
+	    		background: orange;
+	    	}
+	    	.carousel{
+	    		height: 45rem;
+	    		background-color:#000;
+	    		margin-bottom: 4rem;
+	    	}
+	    	.carousel .item{
+	    		height: 45rem;
+	    		background-color:#000;
+	    	}
+	    	.carousel img{
+	    		width:100%;
+	    	}
+	    	@media (max-width: 768px) {
+			    .carousel {
+			        height: 200px;
+			        margin-bottom: 30px;
+			    }
+			    .carousel .item{
+			        height: 200px;
+			    }
+			    .carousel img {
+			        min-height: 200px;
+			    }
+			}
+			.jumbotron{
+				background:white;
+				margin-bottom: 5rem;
+			}
+			.show-image{
+				margin-bottom: 10rem;
+			}
+			footer{
+				background-color:#2c3e50;
+				color:white;
+			}
+			footer p{
+				margin-top: 1.5rem;
+			}
+			footer h4{
+				margin-top: 4rem;
+			}
+			footer a{
+				color:white;
+			}
+	    
