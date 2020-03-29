@@ -4,43 +4,100 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>4-1图片库</title>
-	<link rel="stylesheet" href="main.css">
 	<style type="text/css" media="screen">
 		img{
 			display:block;
 			width:1280px;
 			height:720px;
+			margin: 0 auto;
+		}
+		body {
+			box-sizing: border-box;
+			margin: 1rem 10%;
+			padding: 0;
+			font-size: 10px;
+			background-color: blanchedalmond;
+		}
+		h1 {
+			text-align: center;
+			margin: 0 auto;
+			font-size: 2rem;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		a {
+			text-decoration: none;
+		}
+		li {
+			padding: 2.5rem;
+			flex-flow: row;
+			list-style-type: none;
+			justify-content: center;
+			margin: 0 auto;
+		}
+		p {
+			font-size: 2.5rem;
+			margin: 1rem auto;
+			padding: 2.5rem;
 		}
 	</style>
 </head>
 <body>
 	<h1>snapshots</h1>
-	<ul>
+	<ul id="imagegallery">
 		<li>
+<<<<<<< HEAD:greenhand/JavaScript-DOM/JavaScript DOM4-1图片库.html
 			<a href=".\JavaScript DOM/psb-1.jpg" onclick="showPic(this);return false;">Fireworks</a>
 		</li>
 		<li>
 			<a href="./JavaScript DOM/psb-2.jpg" onclick="showPic(this);return false;">Coffee</a>
+=======
+			<a href="../JavaScript DOM/psb-1.jpg"  title="A fireworks diplay">Fireworks</a>
 		</li>
 		<li>
-			<a href="../JavaScript DOM/psb-3.jpg" onclick="showPic(this);return false;">Rose</a>
+			<a href="../JavaScript DOM/psb-2.jpg" title="A cup of black coffee">Coffee</a>
+>>>>>>> 9dc234d312e6e22fa36431e4e1387b86a99044a0:greenhand/JavaScript DOM/JavaScript DOM4-1图片库.html
 		</li>
 		<li>
-			<a href="../JavaScript DOM/psb-4.jpg" onclick="showPic(this);return false;">Big Ben</a>
+			<a href="../JavaScript DOM/psb-3.jpg"  title="A red,red rose">Rose</a>
+		</li>
+		<li>
+			<a href="../JavaScript DOM/psb-4.jpg" title="The famous clock">Big Ben</a>
 		</li>
 	</ul>
 	<img id="placeholder" src="../JavaScript DOM/psb-5.png" alt="" />
+	<p id="description">Choose an image</p>
 	<script type="text/javascript">
 	function showPic(whichpic) {
 		var source = whichpic.getAttribute("href");
 		var placeholder = document.getElementById("placeholder");
 		placeholder.setAttribute("src",source);
+		var text = whichpic.getAttribute('title')
+		var desc = document.getElementById('description')
+		desc.firstChild.nodeValue = text
 	}
+	function prepareGallery() {
+		if(!document.getElementById || !document.getElementsByTagName || !document.getElementById("imagegallery")) return false
+		var gallery = document.getElementById('imagegallery')
+		var links = gallery.getElementsByTagName('a')
+		for ( var i=0; i<links.length; i++) {
+			links[i].onclick = function() {
+				showPic(this)
+				return false
+			}
+		}
+	}
+
 	function countBodyChildren(){
 		var body_element = document.getElementsByTagName("body")[0];
-		alert (body_element.childNodes.length);
+		
 	}
-	window.onload = countBodyChildren;
+	window.onload = function() {
+		prepareGallery()
+	}
 	</script>
 </body>
 </html>
