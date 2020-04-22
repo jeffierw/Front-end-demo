@@ -19,14 +19,101 @@ body {
     transform: translateX(-50%);
     width: 15rem;
     height: 88rem / @baseFont;
+    z-index: 1;
     background-color: #488cdb;
 
     .classify {
         position: absolute;
         top: 15rem / @baseFont;
-        left: 25rem / @baseFont;
-        background-color: pink;
-        width: 18rem / @baseFont;
-        height: 30rem / @baseFont;
+        left: 30rem / @baseFont;
+        width: 36rem / @baseFont;
+        height: 60rem / @baseFont;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 36rem / @baseFont auto;
     }
+
+    .login {
+        position: absolute;
+        top: 15rem / @baseFont;
+        right: 30rem / @baseFont;
+        width: 36rem / @baseFont;
+        height: 60rem / @baseFont;
+        background: url(../images/login.png) no-repeat;
+        background-size: 36rem / @baseFont auto;
+    }
+}
+
+.search {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 290rem / @baseFont;
+    background-color: #488cdb;
+    border-radius: 0 0 50rem / @baseFont 50rem / @baseFont;
+
+    input {
+        flex: 1;
+        height: 58rem / @baseFont;
+        margin: 105rem / @baseFont 18rem / @baseFont 0 18rem / @baseFont;
+        border: 0;
+        outline: none;
+        border-radius: 29rem / @baseFont;
+        font-size: 25rem / @baseFont;
+        color: #757575;
+        padding-left: 60rem / @baseFont;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 115rem / @baseFont;
+        left: 35rem / @baseFont;
+        width: 36rem / @baseFont;
+        height: 36rem / @baseFont;
+        background: url(../images/search.png) no-repeat;
+        background-size: 36rem / @baseFont auto;
+    }
+
+}
+
+.banner {
+    position: relative;
+    width: 702rem / @baseFont;
+    height: 260rem / @baseFont;
+    margin: -115rem / @baseFont auto;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15rem / @baseFont;
+    }
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120rem / @baseFont;
+    width: 15rem;
+    height: 308rem / @baseFont;
+
+    a {
+        flex: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150rem / @baseFont;
+        height: 142rem / @baseFont;
+
+        img {
+            width: 84rem / @baseFont;
+            height: 84rem / @baseFont;
+        }
+
+        span {
+            color: #666;
+            font-size: 22rem / @baseFont;
+        }
+    }
+
 }
