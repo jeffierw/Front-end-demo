@@ -1,0 +1,75 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+/* 修改flexible的默认视口多大，默认字体就多大的特点 */
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+.search-content {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 3.866667rem;
+    background-color: #19a68e;
+    border-radius: 0 0 .4rem .4rem;
+}
+
+.classify {
+    width: .48rem;
+    height: .8rem;
+    background: url(../images/classify.png) no-repeat;
+    background-size: .48rem auto;
+    margin: .2rem 0 0 .333333rem;
+}
+
+.c {
+    flex: 1;
+    /* background-color: #fff; */
+}
+
+.login {
+    width: .48rem;
+    height: .8rem;
+    background: url(../images/login.png) no-repeat;
+    background-size: .48rem auto;
+    margin: .2rem .333333rem 0 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    flex: 1;
+    width: 10rem;
+    height: .8rem;
+    color: #666;
+    margin: 1.333333rem .2rem 0 .2rem;
+    z-index: 1;
+    padding-left: .666667rem;
+    border-radius: .4rem;
+}
