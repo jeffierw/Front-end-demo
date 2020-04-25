@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-show指令</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="button" value="显示隐藏v-show" @click="changeShow">
+        <input type="button" value="增加年龄" @click="addAge">
+        <img src="#" alt="显示" v-show="isShow">
+        <img src="#" alt="18岁可以看啦" v-show="age>=18">
+    </div>
+    <!-- 原理是通过修改元素的display为none切换隐藏 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isShow: false,
+                age: 17
+            },
+            methods: {
+                changeShow() {
+                    this.isShow = !this.isShow
+                },
+                addAge() {
+                    this.age++
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

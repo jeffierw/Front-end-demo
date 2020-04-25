@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-for指令</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="button" value="添加菜" @click="addFood"><input type="button" value="减少菜" @click="removeFood">
+        <ul>
+            <li v-for="(it,indx) in arr">
+                {{ indx+1 }} 主要编号有 {{ it }}
+            </li>
+        </ul>
+        <p v-for="food of foods" :title="food.name">{{food.name}}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                arr: ['233', '322', '222', '333'],
+                foods: [
+                    { name: '西红柿炒蛋' },
+                    { name: '红烧牛肉面' }
+                ]
+            },
+            methods: {
+                addFood: function () {
+                    this.foods.push({ name: '杂粮煎饼' })
+                },
+                removeFood: function () {
+                    this.foods.shift()
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

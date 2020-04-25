@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-on指令</title>
+</head>
+<div id="app">
+    <a href="#" v-on:click='doIt'>点击我触发事件</a>
+    <a href="#" @click='doIt'>使用语法糖@触发事件</a>
+    <h2 @click="changeFood">{{food}}</h2>
+</div>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                food: '红烧牛肉面'
+            },
+            methods: {
+                doIt: function () {
+                    alert('vue为元素绑定事件使用v-on或者语法糖@')
+                },
+                changeFood: function () {
+                    this.food += '超好吃！'
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

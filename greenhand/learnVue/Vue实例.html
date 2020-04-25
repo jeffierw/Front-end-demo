@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+</head>
+
+<body>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var data = { a: 1 };
+    var vm = new Vue({
+        el: '#example',
+        data: data
+    })
+    // $data,$el是实例属性
+    vm.$data === data
+    vm.$el === document.getElementById('example')
+
+    // $watch 是一个实例方法
+    vm.$watch('a', function (newValue, oldValue) {
+        // 这个回调将在vm.a改变后调用
+    })
+</script>
+
+</html>

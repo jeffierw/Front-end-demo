@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-text指令</title>
+</head>
+<div id="app">
+    <h2 v-text='message+"了"'>吗</h2>
+    <h2 v-text='info+"了"'>吗</h2>
+    <h2>{{message+'吗'}}</h2>
+</div>
+
+<body>
+    <!-- 通过演示可知，v-text和插值表达式同样可以将挂载的数据属性值加载到页面中，但是v-text外的内容不会显示而插值表达式可以显示表达式外的内容 -->
+    <!-- 但是他们都可以进行字符串追加 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '我今天吃了饺子',
+                info: '我也吃了'
+            }
+        })
+    </script>
+</body>
+
+</html>

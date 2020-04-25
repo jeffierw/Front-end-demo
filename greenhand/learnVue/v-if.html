@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-if指令</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="button" value="打开F12查看v-if和v-show的区别" @click="toggleIsShow">
+        <p v-if="isShow">v-if直接操作DOM</p>
+        <p v-show="isShow">v-show操作样式，只改变display属性</p>
+        <p v-if="temperuture<=15">好冷啊</p>
+    </div>
+    <!-- 开发中当频繁切换元素显示隐藏用v-show因为删除DOM和添加DOM节点消耗资源 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isShow: false,
+                temperuture: 12
+            },
+            methods: {
+                toggleIsShow() {
+                    this.isShow = !this.isShow
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

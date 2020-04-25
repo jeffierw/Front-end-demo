@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind指令</title>
+</head>
+<style>
+    .active {
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <img v-bind:src="imgSrc" alt="">
+        <br>
+        <img :src="imgSrc" alt="" :title='imgTitle+"!!!"' :class="isActive?'active':''" @click="toggleActive">
+        <br>
+        <img :src="imgSrc" alt="" :title='imgTitle+"!!!"' :class="{active:isActive}" @click="toggleActive">
+    </div>
+    <!-- v-bind双向数据绑定一般使用语法糖 ： 绑定类名一般使用对象的方式-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                imgSrc: 'http://www.baidu.com/img/bd_logo1.png',
+                imgTitle: '百度',
+                isActive: false
+            },
+            methods: {
+                toggleActive() {
+                    this.isActive = !this.isActive
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

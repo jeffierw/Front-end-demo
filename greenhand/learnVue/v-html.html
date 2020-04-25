@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-html指令</title>
+</head>
+<div id="app">
+    <p v-html="message"></p>
+    <p v-html="content"></p>
+    <p v-text="text"></p>
+</div>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: '普通的传递数据',
+                content: '<a href="#">v-html可以直接解析类似这样的标签</a>',
+                text: '<a href="#">而v-text却只能原封不动的显示完整的标签</a>'
+            }
+        })
+    </script>
+
+</body>
+
+</html>
