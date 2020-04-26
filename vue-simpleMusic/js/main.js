@@ -34,19 +34,21 @@ var app = new Vue({
         musicUrl: '',
         musicImg: '',
         musicComment: [],
-        isPlaying: false
+        isPlaying: false,
+        isShow: false,
+        mvUrl: ''
     },
     methods: {
         searchMusic: function () {
             axios.get("https://autumnfish.cn/search?keywords=" + this.query).then((response) => {
-                console.log(response);
+                // console.log(response);
                 this.musicList = response.data.result.songs
             }).catch((err) => {
                 console.log(err);
             })
         },
         playMusic: function (musicId) {
-            // console.log(musicId);
+            console.log(musicId);
             axios.get("https://autumnfish.cn/song/url?id=" + musicId).then((response) => {
                 // console.log(response.data.data[0].url);
                 this.musicUrl = response.data.data[0].url
@@ -65,11 +67,23 @@ var app = new Vue({
                 console.log(err);
             })
         },
+        playVideo: function (mvid) {
+            axios.get("https://autumnfish.cn/mv/url?id=" + mvid).then((response) => {
+                // console.log(response);
+                this.isShow = true;
+                this.mvUrl = response.data.data.url
+            }).catch((err) => {
+                console.log(err);
+            })
+        },
         play: function () {
             this.isPlaying = true
         },
         pause: function () {
             this.isPlaying = false
+        },
+        hide: function () {
+            this.isShow = false
         }
     }
 })
