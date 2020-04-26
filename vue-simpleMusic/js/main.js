@@ -48,7 +48,7 @@ var app = new Vue({
             })
         },
         playMusic: function (musicId) {
-            console.log(musicId);
+            // console.log(musicId);
             axios.get("https://autumnfish.cn/song/url?id=" + musicId).then((response) => {
                 // console.log(response.data.data[0].url);
                 this.musicUrl = response.data.data[0].url
@@ -61,7 +61,7 @@ var app = new Vue({
                 console.log(err);
             })
             axios.get("https://autumnfish.cn/comment/hot?type=0&id=" + musicId).then((response) => {
-                console.log(response);
+                // console.log(response);
                 this.musicComment = response.data.hotComments
             }).catch((err) => {
                 console.log(err);
