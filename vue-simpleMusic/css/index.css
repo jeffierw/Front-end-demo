@@ -29,7 +29,7 @@ dd {
 
 .search_bar {
     height: 60px;
-    background-color: #1eacda;
+    background-color: #41b883;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     display: flex;
@@ -39,8 +39,16 @@ dd {
     z-index: 11;
 }
 
-.search_bar img {
-    margin-left: 23px;
+.search_bar h3 {
+    float: left;
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: 100;
+    text-align: center;
+    color: #35495e;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 }
 
 .search_bar input {
