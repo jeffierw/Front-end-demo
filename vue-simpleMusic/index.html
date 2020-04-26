@@ -58,8 +58,8 @@
                 <audio ref='audio' @play="play" @pause="pause" :src="musicUrl" controls autoplay loop
                     class="myaudio"></audio>
             </div>
-            <div :src="mvUrl" v-show="isShow" class="video_con" style="display: none;">
-                <video controls="controls"></video>
+            <div v-show="isShow" class="video_con" style="display: none;">
+                <video :src="mvUrl" controls="controls"></video>
                 <div class="mask" @click="hide"></div>
             </div>
         </div>
